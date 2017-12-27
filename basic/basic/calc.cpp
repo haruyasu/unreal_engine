@@ -1,5 +1,6 @@
 #include "calc.h"
 
+/*
 CCalc::CCalc() : m_a(0), m_b(0) {
 }
 
@@ -26,3 +27,4 @@ int CCalc::getA() {
 int CCalc::getB() {
 	return m_b;
 }
+*/

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "sample.h"
 #include "rat.h"
 #include "car.h"
@@ -7,7 +8,33 @@
 
 using namespace std;
 
+
+template <typename T>
+T add(T x, T y) {
+	return x + y;
+}
+
+
 int main(){
+	CCalc<int> i1;
+	CCalc<string> i2;
+
+	i1.set(1, 2);
+	i2.set("DGH", "RGE");
+
+	cout << i1.add() << endl << i2.add() << endl;
+	
+	return 0;
+
+
+/*
+	cout << add<int>(4, 3) << endl;
+	cout << add<string>("ABC", "DEF") << endl;
+	cout << add(3, 5) << endl;
+*/
+
+
+/*
 	CCalc *pC1, *pC2;
 	pC1 = new CCalc();
 	pC2 = new CCalc(1, 2);
@@ -17,6 +44,7 @@ int main(){
 	delete pC2;
 
 	return 0;
+*/
 
 /*
 	CCar c;
