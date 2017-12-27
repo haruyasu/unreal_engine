@@ -16,6 +16,9 @@ T add(T x, T y) {
 
 
 int main(){
+
+/*
+	// template
 	CCalc<int> i1;
 	CCalc<string> i2;
 
@@ -25,7 +28,7 @@ int main(){
 	cout << i1.add() << endl << i2.add() << endl;
 	
 	return 0;
-
+*/
 
 /*
 	cout << add<int>(4, 3) << endl;
